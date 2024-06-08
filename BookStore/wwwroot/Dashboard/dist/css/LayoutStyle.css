@@ -1,0 +1,7 @@
+﻿.card-header::after {
+    display: none;
+}
+
+.custom-width {
+    width: 10%;
+}

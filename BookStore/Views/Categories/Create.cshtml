@@ -1,0 +1,20 @@
+﻿@using BookStore.ViewModel
+@model CategoryVM
+@section Title {
+    Categories
+}
+@section SubTitle {
+    Create Category
+}
+<form adp-cotroller="Categories">
+    <div class="card-body">
+        <div class="form-group">
+            <label asp-for="Name">Category Name</label>
+            <input asp-for="Name" type="text" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="card-footer">
+        <button type="submit" class="AddBtn btn btn-outline-info btn-sm custom-width">Create</button>
+    </div>
+</form>

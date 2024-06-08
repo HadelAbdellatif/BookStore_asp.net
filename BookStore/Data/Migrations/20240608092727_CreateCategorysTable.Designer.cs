@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BookStore.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240602181206_CreateCategorysTable")]
+    [Migration("20240608092727_CreateCategorysTable")]
     partial class CreateCategorysTable
     {
         /// <inheritdoc />
@@ -38,8 +38,8 @@ namespace BookStore.Data.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
 
                     b.Property<DateTime>("UpdatedOn")
                         .HasColumnType("datetime2");
